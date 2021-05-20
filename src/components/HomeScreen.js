@@ -15,7 +15,7 @@ const HomeScreen = ({ city }) => {
   useEffect(() => {
     const fetch = async () => {
       const { data } = await axios.get(
-        `http://api.weatherapi.com/v1/current.json?key=key&q=${city}&aqi=no`
+        `http://api.weatherapi.com/v1/current.json?key=36090bd407b24e7a89e123931211905&q=${city}&aqi=no`
       );
       setTemp(data.current.temp_c);
       setHumidity(data.current.humidity);
